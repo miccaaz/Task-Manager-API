@@ -12,13 +12,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\TasksManager.Application\TasksManager.Application.csproj" />
-    <ProjectReference Include="..\TasksManager.Communication\TasksManager.Communication.csproj" />
-    <ProjectReference Include="..\TasksManager.Exceptions\TasksManager.Exceptions.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Controllers\" />
+    <ProjectReference Include="..\TasksManager.Application\TaskManager.Application.csproj" />
+    <ProjectReference Include="..\TasksManager.Communication\TaskManager.Communication.csproj" />
+    <ProjectReference Include="..\TasksManager.Exceptions\TaskManager.Exceptions.csproj" />
   </ItemGroup>
 
 </Project>

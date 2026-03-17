@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="TasksManager.API/TaskManager.API.csproj" />
+  <Project Path="TasksManager.Application/TaskManager.Application.csproj" />
+  <Project Path="TasksManager.Communication/TaskManager.Communication.csproj" />
+  <Project Path="TasksManager.Exceptions/TaskManager.Exceptions.csproj" />
+  <Project Path="TasksManager.Infrastructure/TaskManager.Infrastructure.csproj" />
+</Solution>
