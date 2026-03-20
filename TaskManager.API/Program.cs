@@ -1,9 +1,12 @@
+using TaskManager.API.Filters;
+
 var builder = WebApplication.CreateBuilder(args);
 
 
 builder.Services.AddControllers();
 builder.Services.AddOpenApi();
 
+builder.Services.AddMvc(options => options.Filters.Add(typeof(ExceptionFilter)));
 builder.Services.AddRouting(options => options.LowercaseUrls = true);
 
 var app = builder.Build();

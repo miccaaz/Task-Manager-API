@@ -11,7 +11,7 @@ public class TaskController : ControllerBase
 {
     [HttpPost]
     [ProducesResponseType(typeof(ResponseShortTaskJson), StatusCodes.Status201Created)]
-    [ProducesResponseType(typeof(ResponseErrorsMessagesJson), StatusCodes.Status400BadRequest)]
+    [ProducesResponseType(typeof(ResponseErrorsJson), StatusCodes.Status400BadRequest)]
     public IActionResult Create([FromBody] RequestTaskRegisterJson request)
     {
         var useCase = new RegisterTaskUseCase();

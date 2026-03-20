@@ -2,6 +2,7 @@
 using TaskManager.Communication.Entities;
 using TaskManager.Communication.Requests;
 using TaskManager.Communication.Responses;
+using TaskManager.Exceptions.ExceptionsBase;
 
 namespace TaskManager.Application.UseCases.Tasks.Register;
 
@@ -34,7 +35,7 @@ public class RegisterTaskUseCase
         if (!result.IsValid)
         {
             var errorMessages = result.Errors.Select(f => f.ErrorMessage).ToList();
-            throw new Exception();
+            throw new ErrorOnValidationException(errorMessages);
         }
     }
 }
